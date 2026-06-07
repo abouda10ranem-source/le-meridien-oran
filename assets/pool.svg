@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="pool-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="30%" stop-color="#1a3a5c"/>
+      <stop offset="60%" stop-color="#c9a96e33"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="pool-water" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2a6e9e"/>
+      <stop offset="30%" stop-color="#4a9ece"/>
+      <stop offset="50%" stop-color="#6abeee"/>
+      <stop offset="70%" stop-color="#4a9ece"/>
+      <stop offset="100%" stop-color="#2a6e9e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#pool-sky)"/>
+  <!-- Sea horizon -->
+  <rect x="0" y="380" width="800" height="220" fill="#0d2137"/>
+  <path d="M0 380 Q200 370 400 385 Q600 395 800 380 L800 600 L0 600 Z" fill="#1a3a5c"/>
+  <path d="M0 390 Q200 405 400 395 Q600 385 800 400 L800 600 L0 600 Z" fill="#0d2137"/>
+  <!-- Pool deck -->
+  <rect x="0" y="340" width="800" height="50" fill="#1a2d4d"/>
+  <rect x="0" y="338" width="800" height="3" fill="#c9a96e33"/>
+  <!-- Pool -->
+  <rect x="100" y="200" width="600" height="150" rx="20" fill="url(#pool-water)"/>
+  <rect x="100" y="200" width="600" height="150" rx="20" fill="none" stroke="#c9a96e44" stroke-width="2"/>
+  <!-- Pool reflections -->
+  <line x1="150" y1="240" x2="350" y2="240" stroke="#ffffff22" stroke-width="1"/>
+  <line x1="200" y1="270" x2="500" y2="270" stroke="#ffffff15" stroke-width="1"/>
+  <line x1="150" y1="300" x2="400" y2="300" stroke="#ffffff22" stroke-width="1"/>
+  <line x1="300" y1="320" x2="550" y2="320" stroke="#ffffff15" stroke-width="1"/>
+  <!-- Sun loungers -->
+  <rect x="120" y="345" width="50" height="20" rx="4" fill="#c9a96e44"/>
+  <rect x="240" y="345" width="50" height="20" rx="4" fill="#c9a96e44"/>
+  <rect x="360" y="345" width="50" height="20" rx="4" fill="#c9a96e44"/>
+  <rect x="480" y="345" width="50" height="20" rx="4" fill="#c9a96e44"/>
+  <rect x="600" y="345" width="50" height="20" rx="4" fill="#c9a96e44"/>
+  <text x="400" y="550" font-family="Georgia, serif" font-size="14" fill="#c9a96e88" text-anchor="middle">Infinity Pool</text>
+</svg>

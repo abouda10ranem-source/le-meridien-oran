@@ -319,7 +319,7 @@ a {
   inset: -10%;
   background-size: cover;
   background-position: center;
-  background-image: url('./assets/hero.png');
+  background-image: url('./assets/hero.svg');
   will-change: transform;
 }
 .hero-bg::after {
