@@ -220,12 +220,12 @@ document.addEventListener("DOMContentLoaded", () => {
           <span>${item.quantity}</span>
           <button class="cart-inc" data-index="${index}">+</button>
         </div>
-        <div class="cart-item-price">$${item.price * item.quantity}</div>
+        <div class="cart-item-price">${item.price * item.quantity} DA</div>
       `;
       cartItemsContainer.appendChild(li);
     });
 
-    cartTotalAmount.innerText = `$${total}`;
+    cartTotalAmount.innerText = `${total} DA`;
 
     document.querySelectorAll(".cart-inc").forEach(btn => {
       btn.addEventListener("click", (e) => {
@@ -264,10 +264,10 @@ document.addEventListener("DOMContentLoaded", () => {
       let body = "Hello, I would like to order the following items to my room:\n\n";
       let total = 0;
       cart.forEach(item => {
-        body += `- ${item.quantity}x ${item.name} ($${item.price * item.quantity})\n`;
+        body += `- ${item.quantity}x ${item.name} (${item.price * item.quantity} DA)\n`;
         total += item.price * item.quantity;
       });
-      body += `\nTotal: $${total}\n\nRoom Number: [Please enter your room number]`;
+      body += `\nTotal: ${total} DA\n\nRoom Number: [Please enter your room number]`;
       
       const mailto = `mailto:reservation@lemeridien-oran.com?subject=${encodeURIComponent("Room Service Order - Le Méridien Oran")}&body=${encodeURIComponent(body)}`;
       window.location.href = mailto;
