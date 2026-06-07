@@ -773,6 +773,7 @@ a {
   display: flex;
   gap: 20px;
   padding: 20px;
+  border: 1px solid transparent;
   border-radius: var(--radius-md);
   transition: var(--transition-smooth);
   align-items: center;

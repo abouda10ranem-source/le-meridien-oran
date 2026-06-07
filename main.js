@@ -373,7 +373,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 12. Back to Top Button
+  // 12. Newsletter Form
+  const newsletterForm = document.getElementById("newsletter-form");
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const input = newsletterForm.querySelector("input");
+      if (input && input.value) {
+        showToast("Thank you for subscribing!");
+        newsletterForm.reset();
+      }
+    });
+  }
+
+  // 13. Back to Top Button
   const backToTop = document.getElementById("back-to-top");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 500) {
